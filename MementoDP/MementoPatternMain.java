@@ -12,6 +12,8 @@ public class MementoPatternMain {
         TextEditor textEditor = new TextEditor();
         Caretaker caretaker = new Caretaker();
 
+        caretaker.saveSnapshot(textEditor);
+
         textEditor.write("Hello everyone.");
         caretaker.saveSnapshot(textEditor);
 
@@ -19,8 +21,7 @@ public class MementoPatternMain {
         caretaker.saveSnapshot(textEditor);
 
         textEditor.write("Lets test the memento pattern.");
-        caretaker.saveSnapshot(textEditor);
-
+   
         System.out.println("Current content: " + textEditor.getContent());
 
         caretaker.restoreSnapshot(textEditor);
