@@ -9,6 +9,10 @@ public class InstitutionalInvestor implements StockObserver {
         this.name = name;
     }
 
+    public String getName(){
+        return name;
+    }
+
     @Override
     public void update(Stock stock, double oldPrice, double newPrice){
         System.out.println("Institutional Investor " + name + " received update for stock " + stock.getSymbol());

@@ -9,6 +9,10 @@ public class StockExchange implements StockObserver {
         this.name = name;
     }
 
+    public String getName(){
+        return name;
+    }
+
     @Override
     public void update(Stock stock, double oldPrice, double newPrice){
         System.out.println("Stock Exchange " + name + " received update for stock " + stock.getSymbol());

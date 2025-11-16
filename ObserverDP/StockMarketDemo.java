@@ -10,7 +10,7 @@ public class StockMarketDemo {
     public static void main(String[] args) {
         Stock stock = new Stock("Reliance", 150.0);
 
-        StockObserver individualInvestor = new IndividualInvestor("Anusatya");
+        StockObserver individualInvestor = new IndividualInvestor("Anusatya", 5.0);
         StockObserver institutionalInvestor = new InstitutionalInvestor("Kotak AMC");
         StockObserver stockExchange = new StockExchange("BSE");
 
@@ -20,8 +20,10 @@ public class StockMarketDemo {
         
         stock.setPrice(155.0);
         stock.setPrice(152.5);
+        stock.setPrice(180.0);
 
         Stock newStock = new Stock("Microcap stock", 1000.0);
+        newStock.subscribe(institutionalInvestor);
         newStock.subscribe(institutionalInvestor);
         newStock.subscribe(stockExchange);
 
