@@ -19,5 +19,14 @@ public class StockMarketDemo {
         stock.subscribe(stockExchange);
         
         stock.setPrice(155.0);
+        stock.setPrice(152.5);
+
+        Stock newStock = new Stock("Microcap stock", 1000.0);
+        newStock.subscribe(institutionalInvestor);
+        newStock.subscribe(stockExchange);
+
+        newStock.setPrice(1005.0);
+        newStock.setPrice(1002.5);
+        
     }
 }

@@ -1,12 +1,13 @@
 package ObserverDP.Subject;
-
 import java.util.ArrayList;
 import java.util.List;
 import ObserverDP.Observer.StockObserver;
 
+
 public class Stock implements Subject{
     private String symbol;
     private double price;
+    private double oldPrice;
     private List<StockObserver> observers;
 
     public Stock(String sym, double price){
@@ -26,15 +27,15 @@ public class Stock implements Subject{
     }
 
     public void setPrice(double price){
-        double oldPrice = this.price;
+        oldPrice = this.price;
         this.price = price;
-        notifyObservers(oldPrice, price);
+        notifyObservers();
     }
 
     @Override
-    public void notifyObservers(double oldPrice, double newPrice){
+    public void notifyObservers(){
         for(StockObserver observer : observers){
-            observer.update(this, oldPrice, newPrice);
+            observer.update(this, oldPrice, price);
         }
     }
 
