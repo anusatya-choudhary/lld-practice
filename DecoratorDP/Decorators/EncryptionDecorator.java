@@ -1,3 +1,7 @@
+package Decorators;
+
+import Components.DataStream;
+
 public class EncryptionDecorator extends StreamDecorator {
     public EncryptionDecorator(DataStream dataStream){
         super(dataStream);

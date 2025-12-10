@@ -1,3 +1,5 @@
+package Components;
+
 public class NetworkStream implements DataStream {
     private String serverAddress;
 
@@ -12,8 +14,9 @@ public class NetworkStream implements DataStream {
 
     @Override
     public void write(String data){
-        System.out.println("Writing data to server: "+serverAddress);
+        System.out.println("Writing data to server: ");
         System.out.println("Data: " + data);
+        this.serverAddress = data;
     }
 
     @Override

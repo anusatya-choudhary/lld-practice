@@ -1,3 +1,7 @@
+package Decorators;
+
+import Components.DataStream;
+
 public abstract class StreamDecorator implements DataStream {
     protected DataStream dataStream;
     

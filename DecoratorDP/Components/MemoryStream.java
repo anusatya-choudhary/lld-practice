@@ -1,3 +1,5 @@
+package Components;
+
 public class MemoryStream implements DataStream {
     private String content;
 
@@ -12,8 +14,9 @@ public class MemoryStream implements DataStream {
 
     @Override
     public void write(String data){
-        System.out.println("Writing content to memory: " + content);
+        System.out.println("Writing content to memory: ");
         System.out.println("Data: "+data);
+        this.content = data;
     }
 
     @Override

@@ -1,3 +1,7 @@
+package Decorators;
+
+import Components.DataStream;
+
 public class BufferingDecorator extends StreamDecorator {
     public BufferingDecorator(DataStream dataStream){
         super(dataStream);

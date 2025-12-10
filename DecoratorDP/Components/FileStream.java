@@ -1,3 +1,5 @@
+package Components;
+
 public class FileStream implements DataStream {
     private String fileName;
 
@@ -12,8 +14,9 @@ public class FileStream implements DataStream {
 
     @Override
     public void write(String data){
-        System.out.println("Writing data to file: " + fileName);
+        System.out.println("Writing data to file: ");
         System.out.println("Data: " + data);
+        this.fileName = data;
     }
 
     @Override

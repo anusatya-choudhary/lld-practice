@@ -1,3 +1,7 @@
+package Decorators;
+
+import Components.DataStream;
+
 public class CachingDecorator extends StreamDecorator {
     public CachingDecorator(DataStream dataStream){
         super(dataStream);

@@ -1,3 +1,7 @@
+package Decorators;
+
+import Components.DataStream;
+
 public class CompressionDecorator extends StreamDecorator{
     public CompressionDecorator(DataStream dataStream){
         super(dataStream);
