@@ -21,3 +21,4 @@ public class NetworkStream implements DataStream {
         return "NetworkStream: " + serverAddress;
     }
 }
+

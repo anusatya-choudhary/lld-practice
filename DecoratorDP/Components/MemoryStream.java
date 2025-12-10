@@ -21,3 +21,4 @@ public class MemoryStream implements DataStream {
         return "MemoryStream: " + content;
     }
 }
+

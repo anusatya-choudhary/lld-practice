@@ -21,3 +21,4 @@ public class FileStream implements DataStream {
         return "FileStream: " + fileName;
     }
 }
+
