@@ -18,8 +18,10 @@ Comprehensive examples demonstrating all 5 SOLID principles with both good and b
 - **Memento Pattern**: Undo/Redo functionality implementation with TextEditor example
 - **Observer Pattern**: Notification function in Stock Market example
 - **Strategy Pattern**: Sorting algorithms performance test
+- **Decorator Pattern**: Stream processing with stackable decorators (Compression, Encryption, Buffering, Caching)
 - **Factory Pattern**: Vehicle creation system (Bike, Car, Truck) demonstrating object creation through a factory
 - **Abstract Factory Pattern**: Cross-platform UI components (Windows/Mac) with Button and Checkbox factories
+
 
 ### 3. OOP revision
 - **Payment Gateway**: Complete payment processing system with multiple payment methods (Credit Card, Debit Card, UPI, Wallet)
