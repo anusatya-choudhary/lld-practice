@@ -1,0 +1,12 @@
+import java.util.List;
+
+public class LinearParkingStrategy implements ParkingStrategy {
+    public ParkingSpot selectParkingSpot(List<ParkingSpot> parkingSpots) {
+        for(ParkingSpot parkingSpot : parkingSpots){
+            if(parkingSpot.isEmpty()){
+                return parkingSpot;
+            }
+        }
+        return null;
+    }
+}
