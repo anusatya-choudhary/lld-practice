@@ -1,3 +1,5 @@
+package Strategy;
+
 import java.util.List;
 
 public interface ParkingStrategy {

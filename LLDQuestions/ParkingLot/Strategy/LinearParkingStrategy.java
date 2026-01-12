@@ -1,3 +1,5 @@
+package Strategy;
+
 import java.util.List;
 
 public class LinearParkingStrategy implements ParkingStrategy {
