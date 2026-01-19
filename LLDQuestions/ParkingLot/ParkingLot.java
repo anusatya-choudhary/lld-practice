@@ -1,3 +1,10 @@
+import Core.Vehicle;
+import Core.Ticket;
+import Payment.Payment;
+import Level.ParkingBuilding;
+import Gate.EntranceGate;
+import Gate.ExitGate;
+
 public class ParkingLot {
     private ParkingBuilding parkingBuilding;
     private EntranceGate entranceGate;

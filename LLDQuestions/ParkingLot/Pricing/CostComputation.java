@@ -1,3 +1,7 @@
+package Pricing;
+
+import Core.Ticket;
+
 public class CostComputation {
     private PricingStrategy pricingStrategy;
 

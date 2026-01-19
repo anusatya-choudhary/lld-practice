@@ -1,6 +1,7 @@
 package Strategy;
 
 import java.util.List;
+import Core.ParkingSpot;
 
 public class NearestToGateParkingStrategy implements ParkingStrategy {
     public ParkingSpot selectParkingSpot(List<ParkingSpot> parkingSpots){

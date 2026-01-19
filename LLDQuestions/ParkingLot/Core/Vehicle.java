@@ -1,3 +1,5 @@
+package Core;
+
 public class Vehicle {
     private String vehicleNumber;
     private VehicleType vehicleType;

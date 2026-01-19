@@ -1,4 +1,10 @@
+package Level;
+
 import java.util.List;
+import Core.Vehicle;
+import Core.VehicleType;
+import Core.ParkingSpot;
+import Core.Ticket;
 
 public class ParkingBuilding {
     private List<ParkingLevel> parkingLevels;

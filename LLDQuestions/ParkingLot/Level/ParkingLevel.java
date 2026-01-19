@@ -1,5 +1,9 @@
+package Level;
+
 import java.util.Map;
 import Manager.ParkingSpotManager;
+import Core.VehicleType;
+import Core.ParkingSpot;
 
 public class ParkingLevel {
     private int levelNumber;

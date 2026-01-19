@@ -2,6 +2,7 @@ package Manager;
 
 import java.util.List;
 import Strategy.ParkingStrategy;
+import Core.ParkingSpot;
 
 public abstract class ParkingSpotManager {
     private List<ParkingSpot> parkingSpots;

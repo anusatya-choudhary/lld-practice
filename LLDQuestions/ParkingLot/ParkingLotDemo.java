@@ -1,9 +1,27 @@
 import java.util.*;
 
+import Core.Vehicle;
+import Core.VehicleType;
+import Core.ParkingSpot;
+import Core.Ticket;
 import Manager.TwoWheelerParkingSpotManager;
 import Manager.FourWheelerParkingSpotManager;
+import Manager.ParkingSpotManager;
 import Strategy.LinearParkingStrategy;
 import Strategy.NearestToGateParkingStrategy;
+import Strategy.ParkingStrategy;
+import Level.ParkingLevel;
+import Level.ParkingBuilding;
+import Pricing.PricingStrategy;
+import Pricing.HourlyRateStrategy;
+import Pricing.FixedRateStrategy;
+import Pricing.CostComputation;
+import Payment.Payment;
+import Payment.CashPayment;
+import Payment.UPIPayment;
+import Payment.CardPayment;
+import Gate.EntranceGate;
+import Gate.ExitGate;
 
 public class ParkingLotDemo {
     public static void main(String[] args) {

@@ -1,6 +1,7 @@
 package Strategy;
 
 import java.util.List;
+import Core.ParkingSpot;
 
 public class LinearParkingStrategy implements ParkingStrategy {
     public ParkingSpot selectParkingSpot(List<ParkingSpot> parkingSpots) {

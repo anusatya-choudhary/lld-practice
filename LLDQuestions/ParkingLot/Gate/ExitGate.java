@@ -1,3 +1,10 @@
+package Gate;
+
+import Core.Ticket;
+import Payment.Payment;
+import Level.ParkingBuilding;
+import Pricing.CostComputation;
+
 public class ExitGate {
     private CostComputation costComputation;
 

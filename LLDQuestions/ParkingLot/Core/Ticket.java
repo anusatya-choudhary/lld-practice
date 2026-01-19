@@ -1,4 +1,7 @@
+package Core;
+
 import java.time.LocalDateTime;
+import Level.ParkingLevel;
 
 public class Ticket {
     private Vehicle vehicle;
