@@ -1,5 +1,7 @@
 package tictactoe.model;
 
+import tictactoe.model.PieceType;
+
 public class Player {
     private final String name;
     private final PieceType pieceType;
