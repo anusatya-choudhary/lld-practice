@@ -1,10 +1,5 @@
 package tictactoe.model;
 
-public enum PieceType {
-    X, O;
-}
-
-
 public class Piece {
     private final PieceType pieceType;
 

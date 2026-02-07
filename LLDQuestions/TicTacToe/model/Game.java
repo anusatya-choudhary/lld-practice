@@ -25,19 +25,21 @@ public class Game {
             board.printBoard();
             int row, col;
             while (true) {
-                System.out.println(currentPlayer.getName() + ", enter row and column (0-indexed): ");
+                System.out.println(currentPlayer.getName() + ", enter row and column (1-indexed): ");
                 row = scanner.nextInt();
                 col = scanner.nextInt();
-                if (board.addPiece(row, col, currentPlayer.getPieceType())) {
+                if (board.addPiece(row - 1, col - 1, currentPlayer.getPieceType())) {
                     break;
                 }
                 System.out.println("Invalid move. Try again.");
             }
 
             if (isThereAWinner(currentPlayer.getPieceType())) {
+                board.printBoard();
                 return currentPlayer;
             }
             if (!board.hasFreeCell()) {
+                board.printBoard();
                 return null; // draw
             }
             players.offer(currentPlayer); // back to end of queue for next round
