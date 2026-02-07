@@ -60,4 +60,12 @@ public class Board {
         }
         System.out.println("+");
     }
+
+    public int getSize() {
+        return size;
+    }
+
+    public PieceType getPiece(int row, int col) {
+        return grid[row][col];
+    }
 }
