@@ -25,3 +25,8 @@ Comprehensive examples demonstrating all 5 SOLID principles with both good and b
 
 ### 3. OOP revision
 - **Payment Gateway**: Complete payment processing system with multiple payment methods (Credit Card, Debit Card, UPI, Wallet)
+
+
+### 4. LLD Questions
+- **Parking Lot**
+- **Tic Tac Toe**
